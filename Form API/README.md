@@ -37,9 +37,9 @@ This folder contains scripts of tutorials and API reference that could help you 
     - Client Secret ``{{client_secret}}``
     - Scope ``data:read``
     - Client Authentication ``Send Client credentials body``
-   <p align="center"><img src="./img/3legged.png" width="600" ></p>   
+   <p align="center"><img src="./img/3legged.png" width="800" ></p>   
 
- 3. Click **Get New Access Token**, it will direct to login Autodesk account, after it succeeds, the token will be generated. Click **Proceed**. Then, **Use Token**, click **Save** on top right of the Authorization tab.
+ 3. Click **Get New Access Token**, it will direct to login Autodesk account, after it succeeds, the token will be generated. Click **Proceed**. Then, **Use Token**, finally click **Save** on top right of the Authorization tab.
 
     Form API requires to work with 3-legged token. This collection takes **[Inheriting auth](https://learning.getpostman.com/docs/postman/sending-api-requests/authorization/#inheriting-auth)** to apply 3-legged token to every endpoint in the collection automatically, which means it does not need to input the token in the header explicitly.
    <p align="center"><img src="./img/token.png" width="600" ></p>   
@@ -51,17 +51,17 @@ This folder contains scripts of tutorials and API reference that could help you 
 2. The scripts assumes account id and project id is available. Run the Run the scripts in the folder __Firstly-Get Project ID__ firstly. It will get the account id and project id by __acc_account_name__ and __acc_project_name__ defined in the environment.
 
 3. Play the scripts. Try to change some parameters or body with more scenarios. 
-   <p align="center"><img src="./help/collection.png" width="400" ></p>   
+   <p align="center"><img src="./img/collection.png" width="400" ></p>   
 
 ## Tutorial Test
 1. Assume the steps of **Setup** have been performed. The access token is ready.
 2. Play the scripts in sequence. Check its Post-Test status if it succeeded or not.
 3. With [Postman Runner](https://learning.postman.com/docs/running-collections/intro-to-collection-runs/), these scripts can be chained to perform auto-test. Check **Tests** tab to define your preferred tests.
-   <p align="center"><img src="./help/tutorial.png" width="400" ></p>   
+   <p align="center"><img src="./img/tutorial.png" width="400" ></p>   
 
 4. The steps of Tutorial may be slighly different to that in API documentation of Forge website. 
-   <p align="center"><img src="./help/runner1.png" width="400" ></p>   
-   <p align="center"><img src="./help/runner2.png" width="400" ></p>   
+   <p align="center"><img src="./img/runner1.png" width="400" ></p>   
+   <p align="center"><img src="./img/runner2.png" width="400" ></p>   
 
 
 ## Tips & Tricks

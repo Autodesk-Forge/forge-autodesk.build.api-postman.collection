@@ -5,11 +5,11 @@
 ![Beginner](https://img.shields.io/badge/Level-Beginner-green.svg)
 [![License](https://img.shields.io/:license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 
-Autodesk Construction Cloud (ACC) is Autodesk’s new unified platform that connects workflows, teams and data at every stage of construction to reduce risk, maximize efficiency, and increase profits. It includes some products: Autodesk Build, Autodesk Collaborate and Autodesk TakeOff etc. All of them are built on Autodesk Docs. 
+Autodesk Construction Cloud (ACC) is Autodesk’s new unified platform that connects workflows, teams and data at every stage of construction to reduce risk, maximize efficiency, and increase profits. It includes a few products: Autodesk Build, Autodesk Collaborate and Autodesk TakeOff etc. All of them are built on Autodesk Docs. 
 
 The ACC APIs allow developers to develop apps that integrate with the ACC platform to extend its capabilities in the construction ecosystem. Check **Blogs** for more details.
 
-This github repository provides Postman collections for the APIs of **Autodesk Build** specific. Each of the category API will go to child folders. More new APIs will be added in the list below with time.
+This github repository provides Postman collections for the APIs of **Autodesk Build** specific. Each collection of the categories will go to corresponding child folder. More new APIs will be added in the list below with time.
 
 ## API Categories:
 
@@ -26,7 +26,7 @@ Postman is a popular tool that provides an easy-to-use interface to send HTTP re
 
 ## What next?
 
-To follow a tutorial, click the corresponding link in the list of **API Categories** or navigate to the corresponding child folder in this repository. The *readme.md* file in the folder provides instructions on how to follow that tutorial. 
+To start the test, click the corresponding link in the list of **API Categories** or navigate to the corresponding child folder. The *readme.md* file in the folder provides instructions on how to test. 
 
 ## Blogs:
 - [Autodesk Construction Cloud Unified Products: Does it Affect My Application?](https://forge.autodesk.com/blog/autodesk-construction-cloud-unified-products-does-it-affect-my-application)
