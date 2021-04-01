@@ -42,7 +42,7 @@ This folder contains scripts of tutorials and API reference that could help you 
  3. Click **Get New Access Token**, it will direct to login Autodesk account, after it succeeds, the token will be generated. Click **Proceed**. Then, **Use Token**, finally click **Save** on top right of the Authorization tab.
 
     Form API requires to work with 3-legged token. This collection takes **[Inheriting auth](https://learning.getpostman.com/docs/postman/sending-api-requests/authorization/#inheriting-auth)** to apply 3-legged token to every endpoint in the collection automatically, which means it does not need to input the token in the header explicitly.
-   <p align="center"><img src="./img/token.png" width="600" ></p>   
+   <p align="center"><img src="./img/token.png" width="400" ></p>   
 
 
 ## API Endpoint Test
