@@ -6,7 +6,7 @@ This folder contains scripts of tutorials and API reference that could help you 
 - API References: includes Form API list that helps quick test or verify each endpoint.
 
  
-## Prerequesiites
+## Prerequisites
 
 1.  **Forge Account**: Learn how to create a Forge Account, activate the subscription and create an app by [this tutorial](http://learnforge.autodesk.io/#/account/). Get Forge _client id_, _client secret_ and  _callback url_. Please register Forge app with the _callback url_ as 
 
@@ -16,10 +16,10 @@ This folder contains scripts of tutorials and API reference that could help you 
 
 3. **Form Data**: Follow [this help](https://help.autodesk.com/view/BUILD/ENU/?guid=Build_Forms_about_forms_html) of Form to prepare some Form templates (pdf and web-form), and prepare some forms that come from templates. At least one form from pdf template and one form from web-form template.
 
-4. The API requires 3 legged token. Ensure the user (to autoruzie data access of the Forge app) is project member and is collaborator or reviewer of Form. 
+4. The API requires 3 legged token. Ensure the user (to authoriaze data access of the Forge app) is project member and is collaborator or reviewer of Form. 
 
 ## Setup Postman environment and Authorization:
-1. Import Postman environment & collection, please setup the following environment vialables, 
+1. Import Postman environment & collection, please setup the following environment variables, 
     - client_id:     Forge App Id.
     - client_secret: Forge App Secret.
     - acc_account_name: The name of ACC account that you want to test with.
@@ -65,7 +65,7 @@ This folder contains scripts of tutorials and API reference that could help you 
 
 
 ## Tips & Tricks
-- These endpoints are mainly used to quick test|verfify based on your good understanding with Form API. If the individual endpoint may not work, you need to check the error message and compare with the API reference if any parameters are wrong/missing.  
+- These endpoints are mainly used to quick test|verify based on your good understanding with Form API. If the individual endpoint may not work, you need to check the error message and compare with the API reference if any parameters are wrong/missing.  
 
 ## License
 
@@ -74,4 +74,3 @@ This sample is licensed under the terms of the [MIT License](http://opensource.o
 ## Written by
 
 Xiaodong Liang [@coldwood](https://twitter.com/coldwood), [Developer Advocate and Support](http://forge.autodesk.com)
-
