@@ -60,13 +60,12 @@ This folder contains scripts of tutorials and API reference that could help you 
    <p align="center"><img src="./img/tutorial.png" width="400" ></p>   
 
 4. The steps of Tutorial may be slighly different to that in API documentation of Forge website. 
-   <p align="center"><img src="./img/runner1.png" width="400" ></p>   
-   <p align="center"><img src="./img/runner2.png" width="400" ></p>   
+   <p align="center"><img src="./img/runner1.png" width="600" ></p>   
+   <p align="center"><img src="./img/runner2.png" width="600" ></p>   
 
 
 ## Tips & Tricks
-- These endpoints are mainly used to quick test|verfify based on your good understanding to cost module and API, the individual endpoint may not work, you need to set up the environment variables before running the Postman request.
-
+- These endpoints are mainly used to quick test|verfify based on your good understanding with Form API. If the individual endpoint may not work, you need to check the error message and compare with the API reference if any parameters are wrong/missing.  
 
 ## License
 
