@@ -13,7 +13,7 @@ This github repository provides Postman collections for the APIs of **Autodesk B
 
 ## API Categories:
 
- * [Form API](./Form%20API)
+ * [Forms API](./Forms%20API)
 
 ## What's Postman?
 
@@ -21,8 +21,8 @@ Postman is a popular tool that provides an easy-to-use interface to send HTTP re
 
 - You can learn how to install and use Postman from [here](https://learning.getpostman.com/docs/postman/launching_postman/installation_and_updates).
 - You can download the Postman installer from [here](https://www.getpostman.com/downloads/).
-- The snapshots in the readme are captured by specifci version. If you are using other versions of Postman, the menus might be slightly different.
-- In each category, tutorial and API references scripts are available. They may be not exacty same to what are demoed on API documentation on Forge website, while mostly the usage and logic are same.
+- The snapshots in the readme are captured by specific version. If you are using other versions of Postman, the menus might be slightly different.
+- In each category, tutorial and API references scripts are available. They may be not exactly same to what are demoed on API documentation on Forge website, while mostly the usage and logic are same.
 
 ## What next?
 
@@ -41,4 +41,3 @@ This sample is licensed under the terms of the [MIT License](http://opensource.o
 ## Written by
 
 Xiaodong Liang [@coldwood](https://twitter.com/coldwood), [Developer Advocate and Support](http://forge.autodesk.com)
-
