@@ -14,6 +14,7 @@ This github repository provides Postman collections for the APIs of **Autodesk B
 ## API Categories:
 
  * [Forms API](./Forms%20API)
+ * [Photos API](./Photos%20API)
 
 ## What's Postman?
 
@@ -41,3 +42,5 @@ This sample is licensed under the terms of the [MIT License](http://opensource.o
 ## Written by
 
 Xiaodong Liang [@coldwood](https://twitter.com/coldwood), [Developer Advocate and Support](http://forge.autodesk.com)
+
+Eason Kang [@yiskang](https://twitter.com/yiskang), [Developer Advocate and Support](http://forge.autodesk.com)
