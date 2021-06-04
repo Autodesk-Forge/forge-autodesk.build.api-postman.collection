@@ -72,8 +72,8 @@ Forms API endpoints support 3-legged token only.
 
 3. With [Postman Runner](https://learning.postman.com/docs/running-collections/intro-to-collection-runs/), these scripts can be chained to perform auto-test. Check **Tests** tab to define your preferred tests.
 
-   <p align="center"><img src="./help/runner1.png" width="600" ></p> 
-   <p align="center"><img src="./help/runner2.png" width="600" ></p> 
+   <p align="center"><img src="./img/runner1.png" width="600" ></p> 
+   <p align="center"><img src="./img/runner2.png" width="600" ></p> 
 
 ## License
 
