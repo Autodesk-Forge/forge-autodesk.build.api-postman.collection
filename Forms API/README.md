@@ -1,38 +1,79 @@
-# Postman Collection for Autodesk Build API 
+# Postman Collection for Forms API 
 
 [![Postman](https://img.shields.io/badge/Postman-v8.0.7-orange.svg)](https://www.getpostman.com/)
 [![Autodesk Construction Cloud API](https://img.shields.io/badge/accapi-v1-green.svg)](https://forge.autodesk.com/en/docs/acc/v1/overview/)
 ![Beginner](https://img.shields.io/badge/Level-Beginner-green.svg)
 [![License](https://img.shields.io/:license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 
-Autodesk Construction Cloud (ACC) is Autodesk’s new unified platform that connects workflows, teams and data at every stage of construction to reduce risk, maximize efficiency, and increase profits. It includes a few products: Autodesk Build, Autodesk Collaborate and Autodesk TakeOff etc. All of them are built on Autodesk Docs. 
+Forms is one of modules in Autodesk Build. It allows your team to securely fill out, review, and manage project forms, in a format of checklist fields. The template can be a web form defined by template builder, or from a pdf file with smart fields. The contributors create form with the template and input their answer, options, notes, signatures etc. The form will be submitted finally for reviewers to review. Check [product help](https://help.autodesk.com/view/BUILD/ENU/?guid=Build_Forms_about_forms_html) for details.
 
-The ACC APIs allow developers to develop apps that integrate with the ACC platform to extend its capabilities in the construction ecosystem. Check **Blogs** for more details.
+## Description
 
-This github repository provides Postman collections for the APIs of **Autodesk Build** specific. Each collection of the categories will go to corresponding child folder. More new APIs will be added in the list below with time.
+This repository provides demos for Forms API. Currently, the public APIs:
+ - GET form-templates
+ - GET forms  
 
-## API Categories:
+The collection will be kept updated with new APIs.  
 
- * [Form API](./Form%20API)
+## Setup
 
-## What's Postman?
+1.  **Forge Account**: Learn how to create a Forge Account, activate the subscription and create an app by [this tutorial](http://learnforge.autodesk.io/#/account/). Get Forge _client id_, _client secret_ and  _callback url_. Please register Forge app with the _callback url_ as 
 
-Postman is a popular tool that provides an easy-to-use interface to send HTTP requests. Postman is able to parse the responses that Forge sends you and save response parameter values to variables. These parameters can then be reused in subsequent requests through these variables. The Postman collections in this repository use this ability to provide pre-populated HTTP requests to help you follow the tutorial workflow with minimal effort. You can also modify the requests and experiment without having to write a single line of code. 
+    ```https://www.getpostman.com/oauth2/callback```
 
-- You can learn how to install and use Postman from [here](https://learning.getpostman.com/docs/postman/launching_postman/installation_and_updates).
-- You can download the Postman installer from [here](https://www.getpostman.com/downloads/).
-- The snapshots in the readme are captured by specifci version. If you are using other versions of Postman, the menus might be slightly different.
-- In each category, tutorial and API references scripts are available. They may be not exacty same to what are demoed on API documentation on Forge website, while mostly the usage and logic are same.
+2. **Autodesk Construction Cloud Account and Project**: must be Account Admin to add the app integration. [Learn about provisioning](https://forge.autodesk.com/blog/bim-360-docs-provisioning-forge-apps). Make a note with the __account name__
 
-## What next?
+3. Create one ACC project and activate Autodesk Build. Make a note with the __project name__ .
 
-To start the test, click the corresponding link in the list of **API Categories** or navigate to the corresponding child folder. The *readme.md* file in the folder provides instructions on how to test. 
+4. Create some Forms with Forms template, and create some custom templates. 
 
-## Blogs:
-- [Autodesk Construction Cloud Unified Products: Does it Affect My Application?](https://forge.autodesk.com/blog/autodesk-construction-cloud-unified-products-does-it-affect-my-application)
-- [Autodesk Build and Other Autodesk Construction Cloud Unified Products Launch](https://forge.autodesk.com/blog/autodesk-build-and-other-autodesk-construction-cloud-unified-products-launch)
-- [Forge Blog](https://forge.autodesk.com/categories/bim-360-api)
-- [Field of View](https://fieldofviewblog.wordpress.com/), a BIM focused blog
+5.  Clone this repository or download it. It's recommended to install [GitHub Desktop](https://desktop.github.com/). To clone it via command line, use the following (**Terminal** on MacOSX/Linux, **Git Shell** on Windows):
+
+    ```git clone https://github.com/Autodesk-Forge/forge-autodesk.build.api-postman.collection```
+
+5. Import the collection and environment files to Postman
+
+6. In environment, input _client id_, _client secret_, _acc_account_name_ and _acc_project_name_.
+
+   <p align="center"><img src="./img/env.png" width="800" ></p>  
+
+## Generate Token
+
+This collection takes **[Inheriting auth](https://learning.getpostman.com/docs/postman/sending-api-requests/authorization/#inheriting-auth)** to apply token to every endpoint in the collection automatically, which means it does not need to input the token in the header explicitly.
+
+Forms API endpoints support 3-legged token only.
+
+   In context menu of collection >> **Edit**, switch to the tab **Authorization**. switch type to **OAuth 2.0**:
+   <p align="center"><img src="./img/3legged.png" width="800" ></p> 
+
+   input the variables in __Authorization__.
+
+   - Grant Type ``Authorization Code``
+   - Callback URL  ``https://www.getpostman.com/oauth2/callback``
+   - Auth URL  ``https://developer.api.autodesk.com/authentication/v1/authorize``
+   - Access Token URL  ``https://developer.api.autodesk.com/authentication/v1/gettoken``
+   - Client ID ``{{client_id}}``
+   - Client Secret ``{{client_secret}}``
+   - Scope ``data:read``
+   - Client Authentication ``Send Client credentials body``
+
+   Click **Get New Access Token**, it will direct to login Autodesk account, after it succeeds, the token will be generated. Click **Save** if it is enabled.  
+
+   <p align="center"><img src="./img/token.png" width="600" ></p> 
+
+## API Test
+
+1. Assume the steps of **Setup** have been performed. The access token is ready.
+
+2. Play the scripts of single endpoints or tutorial endpoints in sequence. Try to change some parameters or body with more scenarios. 
+   <p align="center"><img src="./img/collection.png" width="600" ></p> 
+      <p align="center"><img src="./img/tutorial.png" width="600" ></p> 
+  ensure to run the prerequesite endpoints to get account id and project id.
+
+3. With [Postman Runner](https://learning.postman.com/docs/running-collections/intro-to-collection-runs/), these scripts can be chained to perform auto-test. Check **Tests** tab to define your preferred tests.
+
+   <p align="center"><img src="./help/runner1.png" width="600" ></p> 
+   <p align="center"><img src="./help/runner2.png" width="600" ></p> 
 
 ## License
 
