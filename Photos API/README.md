@@ -12,7 +12,7 @@
 
 This folder contains a Postman Collection that includes all the current ACC Photos API. The collection together with the environment help you easily test these endpoints.
 
-![Collection](Img/collection.png)
+![Collection](img/collection.png)
 
 
 ## Instructions to run the Postman collection are as below:
@@ -25,7 +25,7 @@ This folder contains a Postman Collection that includes all the current ACC Phot
     - project_name:  The project name that you want to operate on.
 
 - Please add the Authorization for the collection, click **Edit Collection**, go to **Authorization** tab, make sure to use **OAuth 2.0** to get a 3 legged token, use it in the **Request Headers**.
-![3leggedToken](Img/3leggedToken.png)
+![3leggedToken](img/3leggedToken.png)
     - Callback URL: https://www.postman.com/oauth2/callback
     - Auth URL: https://developer.api.autodesk.com/authentication/v1/authorize 
     - Access Token URL: https://developer.api.autodesk.com/authentication/v1/gettoken
