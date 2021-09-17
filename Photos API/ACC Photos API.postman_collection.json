@@ -187,12 +187,13 @@
 					{
 						"key": "Accept-Encoding",
 						"value": "gzip, deflate",
-						"type": "text"
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"sort\": [\"createdAt\", \"asc\"]\n}"
 				},
 				"url": {
 					"raw": "{{base_domain}}construction/photos/v1/projects/:projectId/photos:filter",
@@ -261,7 +262,8 @@
 					{
 						"key": "Accept-Encoding",
 						"value": "gzip, deflate",
-						"type": "text"
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"url": {
