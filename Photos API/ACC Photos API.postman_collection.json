@@ -183,12 +183,6 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"type": "text"
-					},
-					{
-						"key": "Accept-Encoding",
-						"value": "gzip, deflate",
-						"type": "text",
-						"disabled": true
 					}
 				],
 				"body": {
@@ -258,12 +252,6 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"type": "text"
-					},
-					{
-						"key": "Accept-Encoding",
-						"value": "gzip, deflate",
-						"type": "text",
-						"disabled": true
 					}
 				],
 				"url": {
