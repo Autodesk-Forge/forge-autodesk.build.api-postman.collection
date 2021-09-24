@@ -14,10 +14,6 @@ This folder contains a Postman Collection that includes all the current ACC Phot
 
 ![Collection](img/collection.png)
 
-### Known issue
-
-- When you're calling POST photos:filter, you will need to add a sort filter in the body, e.g., `{ "sort": ["createdAt", "asc"] }`. Otherwise, the call will be failed, if you have more than 25 photos. (**SVN-3978**)
-
 
 ## Instructions to run the Postman collection are as below:
 
