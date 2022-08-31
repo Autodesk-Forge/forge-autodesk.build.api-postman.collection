@@ -9,11 +9,12 @@ Autodesk Construction Cloud (ACC) is Autodesk’s new unified platform that conn
 
 The ACC APIs allow developers to develop apps that integrate with the ACC platform to extend its capabilities in the construction ecosystem. Check **Blogs** for more details.
 
-This github repository provides Postman collections for the APIs of **Autodesk Build** specific. Each collection of the categories will go to corresponding child folder. More new APIs will be added in the list below with time.
+This github repository provides Postman collections for ACC APIs that contains a fewer endpoints. Each collection of the categories will go to corresponding child folder. More new APIs will be added in the list below with time.
 
 ## API Categories:
 
  * [Forms API](./Forms%20API)
+ * [Locations API](./Locations%20API)
  * [Photos API](./Photos%20API)
 
 ## What's Postman?
