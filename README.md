@@ -1,3 +1,6 @@
+# DEPRECATED
+This repository has been deprecated and migrated to https://github.com/autodesk-platform-services/aps-autodesk.build.api-postman.collection
+
 # Postman Collection for Autodesk Build API 
 
 [![Postman](https://img.shields.io/badge/Postman-v8.0.7-orange.svg)](https://www.getpostman.com/)
